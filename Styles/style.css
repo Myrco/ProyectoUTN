@@ -13,10 +13,16 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+header div {
+  display: flex;
+}
+header h2{
+  margin-left: 240px;
+  margin-top: 45px;
+  font-size: 30px;
+}
 header img {
   width: 150px;
-  background-color: rebeccapurple;
 }
 
 header ul {
@@ -80,8 +86,12 @@ footer {
   align-items: center;
   gap: 20px; 
   text-align: right;
+  display: flex;
 }
-
+footer div {
+  display: block;
+  text-align: left;
+}
 footer ul {
   list-style: none;
 }
