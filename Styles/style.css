@@ -1,100 +1,134 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Aca empiezan los estilos del header */
+header {
+  background-color: #cd324c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  background-color: rebeccapurple;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a{
+  background-color: seagreen;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: larger;
+  padding: 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover{
+  color: #122b18;
+  background-color: rgb(51, 184, 108);
+}
+
+/* Aca empiezan los estilos del main */
+#container {
+  /* min-height: 100vh; */
+  background-color: violet;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+h1{
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  padding: 5px; 
+  padding-top: 10px; 
+  font-size: 40px;
+}
+.item-grid {
+  width: 220px;
+  background-color: #00ff80;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item-grid img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Aca empiezan los estilos del footer */ 
+
+footer {
+  background-color: teal;
+  padding: 30px; 
+  justify-content:space-between;
+  align-items: center;
+  gap: 20px; 
+  text-align: right;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+}
+
+.lista-uno li a{
+  background-color: turquoise;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: larger;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.lista-uno a:hover{
+  color: #43405e;
+  background-color: rgb(124, 255, 242);
+}
   
-  /* Aca empiezan los estilos del header */
+/* Aca empiezan los media querie */
+.lista-dos li {
+  background-color: slateblue;
+  margin: 10px;
+  padding: 10px;
+}  
+a:visited{
+  color: currentColor;
+}
+@media (max-width: 480px) {
   header {
-    background-color: #cd324c;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header img {
-    width: 150px;
-    background-color: rebeccapurple;
-  }
-  
-  header ul {
-    list-style: none;
-    display: flex;
+    flex-direction: column;
     gap: 10px;
+    background-color:chartreuse;
   }
-  
-  header nav ul li {
-    background-color: seagreen;
-    padding: 10px;
-  }
-  
-  /* Aca empiezan los estilos del main */
-  #container {
-    /* min-height: 100vh; */
-    background-color: violet;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+
+  main {
+    background-color:darkblue;
+    color: white;
     padding: 20px;
   }
-  
-  .item-grid {
-    width: 220px;
-    background-color: #00ff80;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
+
+  footer {
+    background-color: crimson;
   }
-  
-  .item-grid img {
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-    /* Aca empiezan los estilos del footer */
-    footer {
-      background-color: teal;
-      padding: 30px;
-      display: flex;
-      justify-content:space-between;
-      align-items: center;
-    }
-    
-    footer ul {
-      list-style: none;
-    
-    }
-    
-    .lista-uno li {
-      background-color: turquoise;
-      margin: 10px;
-      padding: 10px;
-    }
-    
-    .lista-dos li {
-      background-color: slateblue;
-      margin: 10px;
-      padding: 10px;
-    }
-  /* Aca empiezan los media querie */
-    
-  @media (max-width: 480px) {
-    header {
-      flex-direction: column;
-      gap: 10px;
-      background-color:chartreuse;
-    }
-  
-    main {
-      background-color:darkblue;
-      color: white;
-      padding: 20px;
-    }
-  
-    footer {
-      background-color: crimson;
-    }
-  }
+}
